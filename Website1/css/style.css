@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+     scroll-behavior: smooth;
+}
+.logo{
+    width: 20%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    display: flex;
+    width: 30%;
+    border-radius: 130%;
+    border: 2px solid white;
+    margin: 2px;
+}
+.nav-bar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    cursor: pointer;
+    top: 0;
+    
+    
+    
+}
+.nav-list {
+     width: 100%;
+     font-size: 20px;
+     display: flex;
+     align-items: center;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 19px 37px;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.nav-list li a:hover{
+    text-decoration: none;
+    color: grey;
+    
+}
+
+
+.right-nav{
+    
+    width: 50%;
+    text-align: right;
+    padding: 0 32px;
+}
+
+#search{
+    font-size: 17px;
+    border-radius: 5px;
+    border: 2px solid grey;
+}
+
+.background{
+    background:  rgba(0, 0, 0, 0.8) url('img.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstsection{
+    height: 100vh;
+}
+
+.box-main{
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 50%;
+    margin: auto;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.img{
+    width: 120%;
+    border: 5px solid white;
+    padding:4px;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+}
+
+.firstHalf{
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.secondHalf{
+    width: 250%;
+}
+
+.text-big{
+    font-size: 30px;
+   
+}
+    .text-sm {
+        font-size: 15px;
+        text-align: revert;
+    }
+
+.btn {
+    padding: 5px 7px;
+    margin: 4px 0px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-sm{
+    margin-top: auto;
+    vertical-align: middle;
+    padding: 3px 8px;
+    font-size: 16px;
+}
+
+.btn-dark{
+    color: black;
+    border: 2px solid grey;
+    padding: 5px 12px;
+    margin: 5px 10px;
+}
+.section{
+     
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    max-width: 1150px;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.section-left{
+   
+    flex-direction: row-reverse;
+    
+}
+
+.image{
+    width: 100%;
+    border: 5px solid antiquewhite;
+    border-radius: 41px;
+}
+
+ .paras{
+     text-align: center;
+ }
+
+.sectionTag{
+    
+
+}
+
+.sectionSubTag {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: left;
+    margin-left: 2%;
+}
+
+.contact{
+    background-color: #f1ede7;
+    height: 588px;
+}
+
+.text-center{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 11px;
+    font-size: 28px;
+}
+
+.form{
+    max-width: 716px;
+    margin: 19px auto;
+
+}
+
+.form-input{
+    margin: 10px;
+    width: 90%; 
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    padding: 3px 5px;
+}
+
+.text-footer{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 18px;
+    display: flex;
+    justify-content: center;
+    color: white;
+   
+}
+
+.burger{
+    display: none;
+    top: 5px;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+
+}
+
+.line{
+    
+    width: 32px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 4px;
+    
+
+}
+  
+@media only screen and (max-width: 1028px){
+    .nav-list{
+        flex-direction: column;
+    }
+
+    .nav-bar{
+        height: 360px; 
+        flex-direction: column ;
+        transition: all 0.7s ease-out;
+
+    }
+
+    .right-nav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block ;
+    }
+    .h-class-resp{
+        height: 55px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+
+    .box-main{
+        flex-direction: column-reverse;
+        
+    }
+
+    .section{
+        flex-direction: column-reverse; 
+    }
+    
+} 
